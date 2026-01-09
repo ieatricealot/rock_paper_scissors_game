@@ -20,6 +20,9 @@ if question == "yes":
     if player_choice == "paper" and computer_move == "rock":
         show_moves(computer_move,player_choice)
         print ("player win!")
+    if player_choice == computer_move:
+        show_moves(computer_move,player_choice)
+        print ("tie!")
     else:
         show_moves(computer_move,player_choice)
         print ("computer win!")
